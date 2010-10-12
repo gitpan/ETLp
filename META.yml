@@ -1,0 +1,68 @@
+--- #YAML:1.0
+name:               ETLp
+version:            0.01
+abstract:           A framework for managing and auditing ETL processing
+author:
+    - Dan Horne <dan.horne at redbone.co.nz>
+license:            perl
+distribution_type:  module
+configure_requires:
+    ExtUtils::MakeMaker:  0
+build_requires:
+    ExtUtils::MakeMaker:  0
+requires:
+    CGI::Application:     0
+    CGI::Application::Plugin::Forward:  0
+    CGI::Application::Plugin::HTMLPrototype:  0
+    CGI::Application::Plugin::ParsePath:  0
+    CGI::Application::Plugin::Redirect:  0
+    CGI::Application::Plugin::Session:  0
+    CGI::Application::Plugin::TT:  0
+    CGI::Application::Plugin::ValidateRM:  0
+    CGI::Session:         0
+    CGI::Session::Driver::oracle:  0
+    Config::General:      2.43
+    Convert::NLS_DATE_FORMAT:  0
+    Crypt::PasswdMD5:     0
+    Cwd:                  0
+    Data::Page::Navigation:  0
+    DateTime::Format::SQLite:  0
+    DBD::Mock:            0
+    DBD::SQLite:          0
+    DBI:                  0
+    DBIx::Class:          0.08121
+    DBIx::VersionedDDL:   0.12
+    Exception::Class:     0
+    File::Basename:       0
+    File::chdir:          0
+    File::Copy:           0
+    File::Copy::Recursive:  0
+    File::LocalizeNewlines:  1.12
+    File::Slurp:          0
+    IPC::Cmd:             0
+    Log::Dispatch::FileRotate:  0
+    Log::Log4perl:        0
+    Mail::Sendmail:       0
+    Modern::Perl:         0
+    Module::Pluggable:    0
+    Moose:                0.83
+    MooseX::Declare:      0.33
+    MooseX::Singleton:    0
+    MooseX::Types::DateTime:  0
+    Parallel::SubFork:    0
+    Test::Class:          0
+    Test::More:           0
+    Text::CSV:            0
+    Text::CSV_XS:         0
+    Text::Wrapper:        0
+    Time::Piece:          0
+    Try::Tiny:            0
+    UNIVERSAL::require:   0
+no_index:
+    directory:
+        - t
+        - inc
+generated_by:       ExtUtils::MakeMaker version 6.54
+meta-spec:
+    url:      http://module-build.sourceforge.net/META-spec-v1.4.html
+    version:  1.4
