@@ -2,4 +2,8 @@ Revision history for ETLp
 
 0.01    12 October 2010
         First version, released on an unsuspecting world.
+0.02    15 October 2010
+        - Added log dir creation and removal to 01 and 02 tests
+        - Added autodie as a prereq as some Perls don't seem to have it
+          installed by default
 

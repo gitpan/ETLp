@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               ETLp
-version:            0.01
+version:            0.02
 abstract:           A framework for managing and auditing ETL processing
 author:
     - Dan Horne <dan.horne at redbone.co.nz>
@@ -11,6 +11,7 @@ configure_requires:
 build_requires:
     ExtUtils::MakeMaker:  0
 requires:
+    autodie:              0
     CGI::Application:     0
     CGI::Application::Plugin::Forward:  0
     CGI::Application::Plugin::HTMLPrototype:  0
@@ -38,6 +39,7 @@ requires:
     File::Copy:           0
     File::Copy::Recursive:  0
     File::LocalizeNewlines:  1.12
+    File::Path:           0
     File::Slurp:          0
     IPC::Cmd:             0
     Log::Dispatch::FileRotate:  0

@@ -13,7 +13,7 @@ L<http://firefly.activestate.com/dhorne/etlp> or:
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =head1 SYNOPSIS
 
@@ -70,7 +70,7 @@ class ETLp with ETLp::Role::Config {
     use File::LocalizeNewlines;
     use DBI::Const::GetInfoType;
 
-    our $VERSION = '0.01';
+    our $VERSION = '0.02';
     
     has 'app_config_file'  => (is => 'ro', isa => 'Str', required => 1);
     has 'env_config_file'  => (is => 'ro', isa => 'Str', required => 1);

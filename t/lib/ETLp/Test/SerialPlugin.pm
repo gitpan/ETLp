@@ -108,7 +108,7 @@ sub os : Tests(7) {
     );
     like(
         $messages[2],
-        qr!ls: khjbvjfcghj: No such file or directory!,
+        qr!khjbvjfcghj: No such file or directory!s,
         'Invalid OS command'
     );
     like($messages[3], qr!^mv\s+.*data/incoming/test_file.lst\s+.*data/archive!,

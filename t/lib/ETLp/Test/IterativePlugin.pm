@@ -497,7 +497,7 @@ sub os_test : Tests(3) {
     catch {
         like(
             $_,
-            qr/ls: customer1.csv.gz: No such file or directory/s,
+            qr/customer1.csv.gz: No such file or directory/s,
             'Invalid OS command'
         );
     };

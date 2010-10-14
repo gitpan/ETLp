@@ -5,6 +5,9 @@ use ETLp;
 use FindBin qw($Bin);
 use lib "$Bin/lib";
 use ETLp::Test::Singleton;
+use File::Path qw/rmtree/;
+
+mkdir "$Bin/tests/log" unless -d "$Bin/tests/log";
 
 my $etlp = ETLp->new(
     config_directory => "$Bin/tests/conf",
@@ -18,3 +21,5 @@ my $etlps = ETLp::Test::Singleton->new;
 isa_ok($etlps->dbh,    'DBI::db');
 isa_ok($etlps->logger, 'Log::Log4perl::Logger');
 isa_ok($etlps->schema, 'ETLp::Schema');
+
+rmtree "$Bin/tests/log";

@@ -60,6 +60,8 @@ WriteMakefile(
         'Log::Log4perl'                           => 0,
         'Log::Dispatch::FileRotate'               => 0,
         'DateTime::Format::SQLite'                => 0,
+        'autodie'                                 => 0,
+        'File::Path'                              => 0,
     },
 
     dist  => {COMPRESS => 'gzip -9f', SUFFIX => 'gz',},

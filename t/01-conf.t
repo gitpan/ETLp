@@ -7,18 +7,19 @@ use lib ("$Bin/lib", "$Bin/t/lib");
 use ETLp::Test::Singleton;
 use Try::Tiny;
 use Data::Dumper;
+use File::Path qw/rmtree/;
 
 my $etlp;
 
-try {
-    $etlp = ETLp->new(
-        config_directory => "$Bin/tests/conf",
-        app_config_file  => "basic.conf",
-        env_config_file  => "env_test.conf",
-        section          => "test_one",
-        log_dir          => "$Bin/tests/log",
-    );
-};
+mkdir "$Bin/tests/log" unless -d "$Bin/tests/log";
+
+$etlp = ETLp->new(
+    config_directory => "$Bin/tests/conf",
+    app_config_file  => "basic.conf",
+    env_config_file  => "env_test.conf",
+    section          => "test_one",
+    log_dir          => "$Bin/tests/log",
+);
 
 isa_ok($etlp, 'ETLp');
 
@@ -90,3 +91,5 @@ catch {
     like($_, qr/No such application configuration file.*no_such_config.conf/,
         "No such config file");
 };
+
+rmtree "$Bin/tests/log";

@@ -14,10 +14,6 @@ class ETLp::Utility::Command {
 
 ETLp::Utility::Command - Runs Operating System Commands
 
-=head1 VERSION
-
-Version 0.01
-
 =head1 SYNOPSIS
 
     use FindBin qw($Bin);

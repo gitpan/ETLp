@@ -5,10 +5,6 @@ use MooseX::Declare;
 ETLp::Audit::Browser::Model::Schedule - Model Class for interacting
 with Runtime Process Audit Schedules
 
-=head1 VERSION
-
-Version 0.01
-
 =head1 SYNOPSIS
 
     use ETLp::Audit::Browser::Model::Schedule;
