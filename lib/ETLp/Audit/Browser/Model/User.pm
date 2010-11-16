@@ -1,3 +1,5 @@
+package ETLp::Audit::Browser::Model::User;
+
 use MooseX::Declare;
 
 class ETLp::Audit::Browser::Model::User with(ETLp::Role::Config, ETLp::Role::Schema, ETLp::Role::Audit,     ETLp::Role::Browser) {

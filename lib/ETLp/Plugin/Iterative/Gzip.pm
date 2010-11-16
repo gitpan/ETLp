@@ -1,3 +1,5 @@
+package ETLp::Plugin::Iterative::Gzip;
+
 use MooseX::Declare;
 
 =head1 NAME

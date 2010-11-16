@@ -1,3 +1,5 @@
+package ETLp::File::Watch;
+
 use MooseX::Declare;
 
 =head1 NAME

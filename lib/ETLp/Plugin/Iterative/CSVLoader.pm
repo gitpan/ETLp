@@ -1,3 +1,5 @@
+package ETLp::Plugin::Iterative::CSVLoader;
+
 use MooseX::Declare;
 
 =head1 NAME

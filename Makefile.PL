@@ -27,7 +27,7 @@ WriteMakefile(
         'Module::Pluggable'                       => 0,
         'UNIVERSAL::require'                      => 0,
         'MooseX::Types::DateTime'                 => 0,
-        'DBIx::VersionedDDL'                      => '0.12',
+        'DBIx::VersionedDDL'                      => '0.16',
         'Test::Class'                             => 0,
         'DBIx::Class'                             => '0.08121',
         'Time::Piece'                             => 0,

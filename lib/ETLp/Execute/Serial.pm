@@ -1,3 +1,5 @@
+package ETLp::Execute::Serial;
+
 use MooseX::Declare;
 
 =head1 NAME

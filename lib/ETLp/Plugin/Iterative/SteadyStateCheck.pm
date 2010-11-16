@@ -1,3 +1,5 @@
+package ETLp::Plugin::Iterative::PLSQL;
+
 use MooseX::Declare;
 
 =head1 NAME

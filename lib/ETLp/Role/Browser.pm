@@ -1,3 +1,5 @@
+#package ETLp::Role::Browser;
+
 use MooseX::Declare;
 =head1 NAME
 

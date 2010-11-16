@@ -1,4 +1,7 @@
+package ETLp::Plugin::Iterative::Validate;
+
 use MooseX::Declare;
+
 =head1 NAME
 
 ETLp::Plugin::Iterative::Validate - Plugin for validating data

@@ -1,5 +1,6 @@
-use MooseX::Declare;
+package ETLp::Utility::Command;
 
+use MooseX::Declare;
 
 class ETLp::Utility::Command {
     use Data::Dumper;

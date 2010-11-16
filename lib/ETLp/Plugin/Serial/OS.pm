@@ -1,8 +1,10 @@
+package ETLp::Plugin::Iterative::OS;
+
 use MooseX::Declare;
 
 =head1 NAME
 
-ETLp::Plugin::Iterative::OS- Plugin for calling the Operating System
+ETLp::Plugin::Iterative::OS - Plugin for calling the Operating System
 
 =head1 METHODS
 

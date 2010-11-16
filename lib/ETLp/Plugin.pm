@@ -1,3 +1,5 @@
+package ETLp::Plugin;
+
 use MooseX::Declare;
 
 =head1 NAME

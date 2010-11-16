@@ -1,3 +1,5 @@
+package ETLp::Loader::OracleSQLLoader;
+
 use MooseX::Declare;
 
 =head1 NAME

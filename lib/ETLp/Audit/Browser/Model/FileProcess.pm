@@ -1,3 +1,5 @@
+package ETLp::Audit::Browser::Model::FileProcess;
+
 use MooseX::Declare;
 
 class ETLp::Audit::Browser::Model::FileProcess with

@@ -1,3 +1,5 @@
+package ETLp::Audit::Browser::Model::Item;
+
 use MooseX::Declare;
 
 class ETLp::Audit::Browser::Model::Item with

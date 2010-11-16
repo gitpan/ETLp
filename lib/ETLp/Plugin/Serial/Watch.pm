@@ -1,4 +1,7 @@
+package ETLp::Plugin::Serial::Watch;
+
 use MooseX::Declare;
+
 =head1 NAME
 
 ETLp::Plugin::Serial::Watch - Plugin for File Watcher

@@ -1,3 +1,5 @@
+package ETLp::Audit::Browser::Model::Job;
+
 use MooseX::Declare;
 
 class ETLp::Audit::Browser::Model::Job with 

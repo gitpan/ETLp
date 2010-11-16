@@ -1,3 +1,5 @@
+package ETLp;
+
 use MooseX::Declare;
 
 =head1 NAME
@@ -13,7 +15,7 @@ L<http://firefly.activestate.com/dhorne/etlp> or:
 
 =head1 VERSION
 
-Version 0.02
+Version 0.03
 
 =head1 SYNOPSIS
 
@@ -70,7 +72,7 @@ class ETLp with ETLp::Role::Config {
     use File::LocalizeNewlines;
     use DBI::Const::GetInfoType;
 
-    our $VERSION = '0.02';
+    our $VERSION = '0.03';
     
     has 'app_config_file'  => (is => 'ro', isa => 'Str', required => 1);
     has 'env_config_file'  => (is => 'ro', isa => 'Str', required => 1);

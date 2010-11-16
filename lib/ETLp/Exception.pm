@@ -1,3 +1,5 @@
+package ETLp::Exception;
+
 use MooseX::Declare;
 
 =head1 NAME

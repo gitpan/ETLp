@@ -91,7 +91,7 @@ sub item : Tests(11) {
     sleep 1;
     my $date_updated = $item->date_created;
     $etl_item->update_message('Item updated');
-    $item = ETLp::Config->schema->resultset('EtlpItem')->find(1);
+    $item = ETLp::Config->schema->resultset('EtlpItem')->find($etl_item->id);
     is($item->message, 'Item updated', 'Item message updated');
     is(DateTime->compare($date_updated, $item->date_updated),
         -1, 'Audit date updated set');
@@ -101,7 +101,7 @@ sub item : Tests(11) {
         0, 'Parent Job date updated after message update');
 
     $etl_item->update_status('succeeded');
-    $item = ETLp::Config->schema->resultset('EtlpItem')->find(1);
+    $item = ETLp::Config->schema->resultset('EtlpItem')->find($etl_item->id);
     is($item->status->status_name, 'succeeded', 'Item status updated');
     $job = ETLp::Config->schema->resultset('EtlpJob')->find($etl_job->id);
     is(DateTime->compare($job->date_updated, $item->date_updated),

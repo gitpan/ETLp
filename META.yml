@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               ETLp
-version:            0.02
+version:            0.03
 abstract:           A framework for managing and auditing ETL processing
 author:
     - Dan Horne <dan.horne at redbone.co.nz>
@@ -32,7 +32,7 @@ requires:
     DBD::SQLite:          0
     DBI:                  0
     DBIx::Class:          0.08121
-    DBIx::VersionedDDL:   0.12
+    DBIx::VersionedDDL:   0.16
     Exception::Class:     0
     File::Basename:       0
     File::chdir:          0

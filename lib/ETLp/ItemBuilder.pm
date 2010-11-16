@@ -1,3 +1,5 @@
+package ETLp::ItemBuilder;
+
 use MooseX::Declare;
 
 =head1 NAME

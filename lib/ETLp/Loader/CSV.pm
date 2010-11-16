@@ -1,3 +1,5 @@
+package ETLp::Loader::CSV;
+
 use MooseX::Declare;
 
 =head1 NAME

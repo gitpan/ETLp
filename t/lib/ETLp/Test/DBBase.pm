@@ -200,8 +200,9 @@ sub create_schema : Test(setup) {
     my $sv = DBIx::VersionedDDL->new(
         dbh       => $self->dbh,
         ddl_dir   => $self->get_ddl_dir,
-        separator => $self->get_separator,
     );
+    
+    $sv->separator($self->get_separator);
 
     $sv->migrate();
 
@@ -221,8 +222,9 @@ sub remove_schema : Test(teardown) {
     my $sv = DBIx::VersionedDDL->new(
         dbh       => $self->dbh,
         ddl_dir   => $self->get_ddl_dir,
-        separator => $self->get_separator,
     );
+    
+    $sv->separator($self->get_separator);
 
     $sv->migrate(0);
     $self->dbh->do("drop table schema_version");

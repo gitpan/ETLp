@@ -1,3 +1,5 @@
+package ETLp::Audit::FileProcess;
+
 use MooseX::Declare;
 use DateTime;
 

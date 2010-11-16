@@ -1,3 +1,5 @@
+package ETLp::Audit::Browser::Model::Schedule;
+
 use MooseX::Declare;
 
 =head1 NAME

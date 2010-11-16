@@ -1,3 +1,5 @@
+package ETLp::File::Read;
+
 use MooseX::Declare;
 
 =head1 NAME

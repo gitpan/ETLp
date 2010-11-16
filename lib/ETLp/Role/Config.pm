@@ -1,3 +1,5 @@
+#package ETLp::Role::Config;
+
 use MooseX::Declare;
 
 =head1 NAME

@@ -1,3 +1,5 @@
+package ETLp::Audit::Item;
+
 use MooseX::Declare;
 
 =head1 NAME
