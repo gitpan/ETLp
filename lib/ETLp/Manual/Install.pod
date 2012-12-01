@@ -10,7 +10,8 @@ __END__
 
 1. Check the code out of the source code repository:
 
-   svn co http://svn.firefly.activestate.com/dhorne/etlp/trunk etlp
+   svn co http://subversion.assembla.com/svn/etlp/ etlp
+
 
 
 2. Set up your test environment. B<Do not use a production account, as any existing ETLp structures will be removed when the test suite is run>.

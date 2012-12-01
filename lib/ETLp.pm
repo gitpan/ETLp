@@ -9,13 +9,13 @@ ETLp - A framework for managing and auditing ETL processing
 =head1 END-USER DOCUMENTATION
 
 For end-user documentation on how to use ETLp refer to
-L<http://firefly.activestate.com/dhorne/etlp> or:
+L<http://trac.assembla.com/etlp/wiki> or:
 
     perldoc ETLp::Manual::Intro
 
 =head1 VERSION
 
-Version 0.03
+Version 0.04
 
 =head1 SYNOPSIS
 
@@ -72,7 +72,7 @@ class ETLp with ETLp::Role::Config {
     use File::LocalizeNewlines;
     use DBI::Const::GetInfoType;
 
-    our $VERSION = '0.03';
+    our $VERSION = '0.04';
     
     has 'app_config_file'  => (is => 'ro', isa => 'Str', required => 1);
     has 'env_config_file'  => (is => 'ro', isa => 'Str', required => 1);
@@ -436,7 +436,8 @@ Executes the pipeline
         my $dbh    = $self->_create_dbh;
         my $schema_dbh = $self->_create_dbh;
         
-        if (lc $schema_dbh->get_info($GetInfoType{SQL_DBMS_NAME}) eq 'oracle') {
+        if ($schema_dbh->get_info($GetInfoType{SQL_DBMS_NAME}) &&
+            lc $schema_dbh->get_info($GetInfoType{SQL_DBMS_NAME}) eq 'oracle') {
             $schema_dbh->{LongReadLen} = 1000000;
             $schema_dbh->{LongTruncOk} = 1;
         }
@@ -471,7 +472,7 @@ Dan Horne, C<< <dan.horne at redbone.co.nz> >>
 =head1 BUGS
 
 Please report any bugs or feature requests through
-the web interface at L<http://firefly.activestate.com/dhorne/etlp/report/>. 
+the web interface at L<https://rt.cpan.org/Public/Dist/Display.html?Name=ETLp>. 
 
 =head1 SUPPORT
 
@@ -485,21 +486,21 @@ You can also look for information at:
 
 =item Project Home Page
 
-L<http://firefly.activestate.com/dhorne/etlp/>
+L<http://trac.assembla.com/etlp/wiki/>
 
 =item * ETLp Tickets
 
 Please add bug reports, feature requests
 
-L<http://firefly.activestate.com/dhorne/etlp/report/1>
+L<https://rt.cpan.org/Public/Dist/Display.html?Name=ETLp>
 
 =item * Browse Source Code
 
-L<http://firefly.activestate.com/dhorne/etlp/browser>
+L<http://trac.assembla.com/etlp/browser>
 
 =item * Check out the source
 
-svn checkout http://svn.firefly.activestate.com/dhorne/etlp/ etlp
+svn checkout http://subversion.assembla.com/svn/etlp/ etlp
 
 =back
 

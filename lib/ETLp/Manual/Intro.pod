@@ -25,7 +25,7 @@ Is your ETL out of control? ETLp can help!
 
 ETLp is an application framework for supporting ETL tasks by arranging them in a pipeline. It is designed to provide a standardised way for ETL developers to implement their processing, while also removing the burden of capturing and logging audit information. It provides utilities that perform common tasks such as loading and validating data, and emailing errors. This allows developers to spend more time focusing on business logic and less time on application housekeeping.
 
-This manual, together with screenshots, can be viewed at L<http://firefly.activestate.com/dhorne/etlp>
+This manual, together with screenshots, can be viewed at L<http://trac.assembla.com/etlp/wikip>
 
 =head1 WHAT IS AN ETLp PIPELINE?
 

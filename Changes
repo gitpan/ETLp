@@ -8,4 +8,7 @@ Revision history for ETLp
           installed by default
 0.03    16 November 2010
         - Modules now include package line so that they can be indexed by CPAN
+0.94    01 December 2012
+        - Fix RT #69222. Thanks to Joerg Meltzer
+        - Fix RT #69223. Links are now to the newer project site
 

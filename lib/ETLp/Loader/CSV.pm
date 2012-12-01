@@ -218,7 +218,7 @@ Returns
             return "TO_DATE(?, '" . posix2oracle($posix_pattern) . "')";
         } elsif ($driver eq 'mysql') {
             return "STR_TO_DATE(?,'$posix_pattern')";
-        } elsif ($driver eq 'SQLite') {
+        } elsif ($driver eq 'sqlite') {
             return '?'
         }
         ETLpException->throw(error => "Unknown Database Driver: $driver");

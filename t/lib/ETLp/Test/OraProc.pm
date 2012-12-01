@@ -6,6 +6,7 @@ use Data::Dumper;
 use base (qw(ETLp::Test::PluginBase));
 use Try::Tiny;
 use ETLp;
+use ETLp::Config;
 
 sub iterative_procs : Tests(5) {
     my $self     = shift;
@@ -122,10 +123,13 @@ qr!File: customer2.csv.gz; Archive Dir: .*/app_root/data/archive received.!,
 qr!File: customer3.csv.gz; Archive Dir: .*/app_root/data/archive received.!,
         'message 5 returned'
     );
+    
+    # Stops DBI warning when $etlp goes out of scope and the next tests are run
+    ETLp::Config->dbh->disconnect;
 
 }
 
-sub serial_procs : Tests {
+sub serial_procs : Tests(3) {
     my $self     = shift;
     my $app_root = $self->_get_app_root;
 

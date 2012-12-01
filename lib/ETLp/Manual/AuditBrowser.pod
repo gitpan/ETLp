@@ -7,7 +7,7 @@ __END__
 
 =head1 INTRODUCTION
 
-The Runtime Audit Browser provides a web-based interface to the ETL job runs. Sceenshots to accompany this documnetation can be viewed at L<http://firefly.activestate.com/dhorne/etlp/wiki/UsingTheAuditBrowser>
+The Runtime Audit Browser provides a web-based interface to the ETL job runs. Sceenshots to accompany this documnetation can be viewed at L<http://trac.assembla.com/etlp/wiki/UsingTheAuditBrowser>
 
 =head1 SETTING UP USERS
 
